@@ -23,7 +23,7 @@ namespace Api.Controllers
         {
             try
             {
-                return Ok(await _repository.GetPicture());
+                return Ok(new { Avatar = await _repository.GetPicture() });
             }
             catch (Exception err)
             {
@@ -37,7 +37,7 @@ namespace Api.Controllers
         {
             try
             {
-                return Ok(await _repository.GetTitle(pos));
+                return Ok(new { Title = await _repository.GetTitle(pos) });
             }
             catch (Exception err)
             {
@@ -51,7 +51,7 @@ namespace Api.Controllers
         {
             try
             {
-                return Ok(await _repository.GetDescription(pos));
+                return Ok(new { Description = await _repository.GetDescription(pos) });
             }
             catch (Exception err)
             {
