@@ -8,6 +8,6 @@ namespace Api.Reposiories
 
         public Task<string> GetTitle(int pos);
         public Task<string> GetDescription(int pos);
-        // public Task<string> GetPicture();
+        public Task<string> GetPicture();
     }
 }

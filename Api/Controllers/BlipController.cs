@@ -19,12 +19,11 @@ namespace Api.Controllers
         }
 
         [HttpGet("avatar")]
-        public IActionResult GetAvatar()
+        public async Task<IActionResult> GetAvatar()
         {
             try
             {
-                // return Ok(new { Avatar = await _repository.GetPicture() });
-                return Redirect("https://avatars.githubusercontent.com/u/4369522?v=4");
+                return Ok(new { Avatar = $"{await _repository.GetPicture()}.png" });
             }
             catch (Exception err)
             {
