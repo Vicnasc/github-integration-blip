@@ -38,12 +38,12 @@ namespace Api.Reposiories
             return repository.Description;
         }
 
-        public async Task<string> GetPicture()
-        {
-            User user = await _client.User.Get("takenet");
+        // public async Task<string> GetPicture()
+        // {
+        //     User user = await _client.User.Get("takenet");
 
-            return user.AvatarUrl;
-        }
+        //     return user.AvatarUrl;
+        // }
 
         public async Task<string> GetTitle(int pos)
         {
