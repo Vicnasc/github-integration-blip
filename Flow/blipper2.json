@@ -17,18 +17,25 @@
           },
           "$invalid": false
         },
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:20345"
       }
     ],
     "$conditionOutputs": [
       {
         "stateId": "welcome",
         "conditions": [
-          { "source": "input", "comparison": "matches", "values": [".*"] }
+          {
+            "source": "input",
+            "comparison": "matches",
+            "values": [".*"],
+            "$$hashKey": "object:20392"
+          }
         ],
         "$id": "5a964547-9805-4c54-ad3b-f4391fb0835b",
         "$connId": "con_3",
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:20373"
       }
     ],
     "$enteringCustomActions": [],
@@ -64,7 +71,7 @@
           "$invalid": false
         },
         "$invalid": false,
-        "$$hashKey": "object:10492"
+        "$$hashKey": "object:12495"
       }
     ],
     "$conditionOutputs": [
@@ -75,23 +82,23 @@
             "source": "input",
             "comparison": "matches",
             "values": [".*"],
-            "$$hashKey": "object:10537"
+            "$$hashKey": "object:12506"
           }
         ],
         "$id": "d321e81c-50da-4f41-b844-f09d5adfd8e4",
         "$connId": "con_8",
         "$invalid": false,
-        "$$hashKey": "object:10518"
+        "$$hashKey": "object:12498"
       }
     ],
     "$enteringCustomActions": [],
     "$leavingCustomActions": [],
     "$inputSuggestions": [],
-    "$defaultOutput": { "stateId": "onboarding", "$invalid": false },
+    "$defaultOutput": { "stateId": "welcome", "$invalid": false },
     "$tags": [],
     "id": "fallback",
     "$title": "Exceptions",
-    "$position": { "top": "120px", "left": "877px" },
+    "$position": { "top": "66px", "left": "870px" },
     "$invalidContentActions": false,
     "$invalidOutputs": false,
     "$invalidCustomActions": false,
@@ -122,7 +129,8 @@
             "editing": false
           }
         },
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:16972"
       },
       {
         "action": {
@@ -146,25 +154,8 @@
             "position": "left"
           }
         },
-        "$invalid": false
-      },
-      {
-        "input": {
-          "bypass": true,
-          "$cardContent": {
-            "document": {
-              "id": "40fe6299-5690-48b6-9265-de88c84671da",
-              "type": "text/plain",
-              "content": "User input"
-            },
-            "editable": false,
-            "deletable": true,
-            "position": "right",
-            "editing": false
-          },
-          "$invalid": false
-        },
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:16973"
       },
       {
         "action": {
@@ -194,7 +185,8 @@
             "position": "left"
           }
         },
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:16975"
       },
       {
         "action": {
@@ -224,7 +216,8 @@
             "position": "left"
           }
         },
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:16976"
       },
       {
         "action": {
@@ -254,7 +247,8 @@
             "position": "left"
           }
         },
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:16977"
       },
       {
         "action": {
@@ -274,7 +268,7 @@
                       "title": "Take.Be",
                       "text": "Pessoas em 1º lugar",
                       "type": "image/jpeg",
-                      "uri": "https://s3-sa-east-1.amazonaws.com/msging.net/Services/Images/2e3ff2b4-a8c6-4188-bc0c-0f23531739b2",
+                      "uri": "https://s3-alpha-sig.figma.com/img/1e68/37d5/216d0fa89e84e68da215be8e213e1f6f?Expires=1629676800&Signature=DBpBh53OGdPa1HKTBmKELJD-5fSjFPZaS-q0M9wcklIocyXd0nD46m8DYfD8jOFPVnrtiNCHuVZDU7NTDOvd7jtzDRqQSVnsdtzM0dgsdalRfmNKqKKVmHPehBWZMgREkbjU0Ck~7C9KnuZXrPzSREKb07cUE7scb7GqkNvEnAl4Cbh0BLgC26xATvOs6P9Hc9pjzT5tCnM2xKMK4~A7aBGY24cQkA4EqMcXb-Ju~5OXK0FbklASUeLZL1sbQoZUgK1ujRmJvQVNorBCs3NLi~XnJTFn6xxDQM~-LAmKaeLhcjzQTNJMqVu0bcjJHOAEYRpt5Tw7Dtuaw25vOWqZ3w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
                       "aspectRatio": "2:1"
                     }
                   },
@@ -297,7 +291,7 @@
                       "title": "Take.Team",
                       "text": "Em nosso time, cada pessoa dá o seu melhor",
                       "type": "image/jpeg",
-                      "uri": "https://s3-sa-east-1.amazonaws.com/msging.net/Services/Images/2e3ff2b4-a8c6-4188-bc0c-0f23531739b2",
+                      "uri": "https://s3-alpha-sig.figma.com/img/9f4d/363b/2c2faaceba4c36ae2fd93d4092cfcaa8?Expires=1629676800&Signature=dIflkweBXicwsafNcPY0NF01vYzJUrv35bO95qp1zdPVrrb2D5TIqURVfQ711WI-gsMkENhTcdNSxD1lifUHtjI6~lxKVrZG64qsO3qj~wBmqjZa-uxp6LBiOEBRqxU9ULzgiEQxldeMcM9M6RbCAZIYNJw11fkUFgmbJpeMvMZcX8LYgcR6exli5etPNFKg16Yu4z1MFytUjKBa9uayMCvDnZEMtMa8crcz7ZktAxHWYLesqsm712A80CC3XIbb7QTCeWUnDdsDHZj3T-RKUWJEyWMQnFh9s0uWPRLl0dSCFuxXFUxRnn0Y~wtCBkB1H78Qx6wLfCRpjHnxJ6gT5Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
                       "aspectRatio": "2:1"
                     }
                   },
@@ -320,7 +314,7 @@
                       "title": "Take.Excellence",
                       "text": "Excelente é o nosso ponto de partida",
                       "type": "image/jpeg",
-                      "uri": "https://s3-sa-east-1.amazonaws.com/msging.net/Services/Images/2e3ff2b4-a8c6-4188-bc0c-0f23531739b2",
+                      "uri": "https://s3-alpha-sig.figma.com/img/946c/8696/625713c30c4aefa35e61215b0b90cc30?Expires=1629676800&Signature=dtfu6oWL3XkOwZsX~tnOSiKDX5qLCrYoUaSGR23h1GwY6Eq8GwEj1ZFz08yV3iYYWh-p0Wu9XHGmOcgfQG5QC8LqHlC42BdqM2UfioeyOvls9Pn4V-JtmL1xZ8J77PjNTb9aoVEzS75fxWwj8EzwX2lCi0O9i~-jwHraXXSN~FnQ5Vv6oHwBy6CJjHfFHhl0nfAw1Bj4tEKnRHjptWQ0HiKLxWoJ6NubNSjfQQXRuS9E1ppYpGxGJ-IrHwPUmHtDdcDM1-rvgqU1LrB40835wlCBGKFZ-Hd9EgHoOa95Je9RpazyNVxnrYLeJITkncGe41ROB-vSNBCw0uR9xpb~vA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
                       "aspectRatio": "2:1"
                     }
                   },
@@ -343,7 +337,7 @@
                       "title": "Take.Charge",
                       "text": "Apropriar-se para fazer a diferença",
                       "type": "image/jpeg",
-                      "uri": "https://s3-sa-east-1.amazonaws.com/msging.net/Services/Images/2e3ff2b4-a8c6-4188-bc0c-0f23531739b2",
+                      "uri": "https://s3-alpha-sig.figma.com/img/7c54/bf8d/4d99d783d7d00a250b1d934e9ff1f914?Expires=1629676800&Signature=XUe9kec0dpkFfZ3FJiMS43AOeUlWzIQ2LoolSm7ehvPhojgQvdiAygrw-ZlKUnRvFz96dNerElPuzGXc~ju17pP0y~h59yNU3nbRPGc3Xni2VhPYN32i~tNGq532gge9cm9mL-yysTRtG0Np7d1-tQXFx4l35qCsy7vR9Nzzbm217T07wgS3fezFvSUVcspxKkFBnAItMXA4JyjoDjm7PNTcP2WEXTtyGPetgcoEaZDzecjQ3wglMY90z~xDK0dzzBsx1ZnZDJFXhUQxmbOAFZX3BjJxrxg1vblj81J~Numre4nkfFEq-L8jV~i4e7UNwF3eUB8uwSatr640nvyZYQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
                       "aspectRatio": "2:1"
                     }
                   },
@@ -366,7 +360,7 @@
                       "title": "Take.Simple",
                       "text": "Simplicidade é o último grau de sofisticação",
                       "type": "image/jpeg",
-                      "uri": "https://s3-sa-east-1.amazonaws.com/msging.net/Services/Images/2e3ff2b4-a8c6-4188-bc0c-0f23531739b2",
+                      "uri": "https://s3-alpha-sig.figma.com/img/4ea0/e2d8/74967d804f0567bc36ca7cea681c84cc?Expires=1629676800&Signature=PAxGvubMtCYecV60QAVxHysheliAmEoCHqfAxWi2oGkzQSdC7CLu5nH3j4Z30CVyUwGkvWWkwVPB66M-lfPqGinoEAxcGPPiuIdUtjVQwq3Of9SpgiP7v9UW~vdrIsEdszCpkFdWWR3Q9C-bibvg25pIGajRpZGgytReZZM~6~VoqzMaDfyJN2o-DbP40t2vc5jOdBwDmNrL08C6Fc0B-0Sv0ix~QTPxgC5XnsHpyuuUSmPobN8gbVBApo67A0ZbDwDSkeBu59uges4GR0XICbwaPundm9tb34MIYCineZ0913CI~0cHNjSuAUVm88hdNUkDJZLR56q9~Cbmx6sY7g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
                       "aspectRatio": "2:1"
                     }
                   },
@@ -389,7 +383,7 @@
                       "title": "Take.Higher",
                       "text": "Pensar grande e ir além",
                       "type": "image/jpeg",
-                      "uri": "https://s3-sa-east-1.amazonaws.com/msging.net/Services/Images/2e3ff2b4-a8c6-4188-bc0c-0f23531739b2",
+                      "uri": "https://s3-alpha-sig.figma.com/img/8d83/3531/bf7c758ea21576cac3a88739a0a3d740?Expires=1629676800&Signature=KdjuXvz7RJL8iX7CX3DcOr4~6BUqto~vO7cp9g6F3LJ8QOxKn6hHadGhRcuE2pZyb9NmnapreYKeXD9Y-xtdvIosAJAcjHRHkjcPGydS8SPJetzbNxPnGytosKvPII5HpnOsOU-InEiZqWs1GZL6mlcpWahga5x5BQY91v9SU6ozeutDudfS7pwrwzRUkU6fy7Pr2ElK6DpTXC7yDFmTYlAL4tQO61PgQJttInrbZmMbORb-VPZ5gXtAK3THBH2kiA7hWnYnpKokbxdRkJLdJEEI4W2-CWeN983-M-xKoQGxfC6ItsdkoZjRJi8OiIQbvFrHtnzB2IpX7CGedB8y-g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
                       "aspectRatio": "2:1"
                     }
                   },
@@ -412,7 +406,7 @@
                       "title": "Desafio",
                       "text": "----",
                       "type": "image/jpeg",
-                      "uri": "https://s3-sa-east-1.amazonaws.com/msging.net/Services/Images/2e3ff2b4-a8c6-4188-bc0c-0f23531739b2",
+                      "uri": "https://s3-alpha-sig.figma.com/img/7ed0/c940/9d58314f786e078de482d5a8ed40f205?Expires=1629676800&Signature=VNPH5TWMOFgcgH3bEJxkP-IjSR~NNBy6e9Z8E-cos0zVk9tMxt5~S2FZlqnuCDkSBHR2VGoLpSZpczrFdixdM3MeVSRHLUhs-6SXUH7ETEMHc38HLhBZT~ZZsQ3KZDBkS0FBa46HMHmqS38c9HSrla0IUgWB0sNqygQFvZWa~S8r8m1A3skwnHFVJQ-AYnX51Jna679ZBKzzo2DpPBfKXSGDCJd4laF~5mh0OHfzsj7RIP8jFA1WRUty9x~m64wtlliQKzNcVp2vUBIwwzwnVFe299fwfGdrgL7vqmbDE8VqXMyLQPvzygh99Yi1MOtriEGejJ9ASorTRV0jzy9QdA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
                       "aspectRatio": "2:1"
                     }
                   },
@@ -452,7 +446,7 @@
                         "title": "Take.Be",
                         "text": "Pessoas em 1º lugar",
                         "type": "image/jpeg",
-                        "uri": "https://s3-sa-east-1.amazonaws.com/msging.net/Services/Images/2e3ff2b4-a8c6-4188-bc0c-0f23531739b2",
+                        "uri": "https://s3-alpha-sig.figma.com/img/1e68/37d5/216d0fa89e84e68da215be8e213e1f6f?Expires=1629676800&Signature=DBpBh53OGdPa1HKTBmKELJD-5fSjFPZaS-q0M9wcklIocyXd0nD46m8DYfD8jOFPVnrtiNCHuVZDU7NTDOvd7jtzDRqQSVnsdtzM0dgsdalRfmNKqKKVmHPehBWZMgREkbjU0Ck~7C9KnuZXrPzSREKb07cUE7scb7GqkNvEnAl4Cbh0BLgC26xATvOs6P9Hc9pjzT5tCnM2xKMK4~A7aBGY24cQkA4EqMcXb-Ju~5OXK0FbklASUeLZL1sbQoZUgK1ujRmJvQVNorBCs3NLi~XnJTFn6xxDQM~-LAmKaeLhcjzQTNJMqVu0bcjJHOAEYRpt5Tw7Dtuaw25vOWqZ3w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
                         "aspectRatio": "2:1"
                       }
                     },
@@ -475,7 +469,7 @@
                         "title": "Take.Team",
                         "text": "Em nosso time, cada pessoa dá o seu melhor",
                         "type": "image/jpeg",
-                        "uri": "https://s3-sa-east-1.amazonaws.com/msging.net/Services/Images/2e3ff2b4-a8c6-4188-bc0c-0f23531739b2",
+                        "uri": "https://s3-alpha-sig.figma.com/img/9f4d/363b/2c2faaceba4c36ae2fd93d4092cfcaa8?Expires=1629676800&Signature=dIflkweBXicwsafNcPY0NF01vYzJUrv35bO95qp1zdPVrrb2D5TIqURVfQ711WI-gsMkENhTcdNSxD1lifUHtjI6~lxKVrZG64qsO3qj~wBmqjZa-uxp6LBiOEBRqxU9ULzgiEQxldeMcM9M6RbCAZIYNJw11fkUFgmbJpeMvMZcX8LYgcR6exli5etPNFKg16Yu4z1MFytUjKBa9uayMCvDnZEMtMa8crcz7ZktAxHWYLesqsm712A80CC3XIbb7QTCeWUnDdsDHZj3T-RKUWJEyWMQnFh9s0uWPRLl0dSCFuxXFUxRnn0Y~wtCBkB1H78Qx6wLfCRpjHnxJ6gT5Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
                         "aspectRatio": "2:1"
                       }
                     },
@@ -498,7 +492,7 @@
                         "title": "Take.Excellence",
                         "text": "Excelente é o nosso ponto de partida",
                         "type": "image/jpeg",
-                        "uri": "https://s3-sa-east-1.amazonaws.com/msging.net/Services/Images/2e3ff2b4-a8c6-4188-bc0c-0f23531739b2",
+                        "uri": "https://s3-alpha-sig.figma.com/img/946c/8696/625713c30c4aefa35e61215b0b90cc30?Expires=1629676800&Signature=dtfu6oWL3XkOwZsX~tnOSiKDX5qLCrYoUaSGR23h1GwY6Eq8GwEj1ZFz08yV3iYYWh-p0Wu9XHGmOcgfQG5QC8LqHlC42BdqM2UfioeyOvls9Pn4V-JtmL1xZ8J77PjNTb9aoVEzS75fxWwj8EzwX2lCi0O9i~-jwHraXXSN~FnQ5Vv6oHwBy6CJjHfFHhl0nfAw1Bj4tEKnRHjptWQ0HiKLxWoJ6NubNSjfQQXRuS9E1ppYpGxGJ-IrHwPUmHtDdcDM1-rvgqU1LrB40835wlCBGKFZ-Hd9EgHoOa95Je9RpazyNVxnrYLeJITkncGe41ROB-vSNBCw0uR9xpb~vA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
                         "aspectRatio": "2:1"
                       }
                     },
@@ -521,7 +515,7 @@
                         "title": "Take.Charge",
                         "text": "Apropriar-se para fazer a diferença",
                         "type": "image/jpeg",
-                        "uri": "https://s3-sa-east-1.amazonaws.com/msging.net/Services/Images/2e3ff2b4-a8c6-4188-bc0c-0f23531739b2",
+                        "uri": "https://s3-alpha-sig.figma.com/img/7c54/bf8d/4d99d783d7d00a250b1d934e9ff1f914?Expires=1629676800&Signature=XUe9kec0dpkFfZ3FJiMS43AOeUlWzIQ2LoolSm7ehvPhojgQvdiAygrw-ZlKUnRvFz96dNerElPuzGXc~ju17pP0y~h59yNU3nbRPGc3Xni2VhPYN32i~tNGq532gge9cm9mL-yysTRtG0Np7d1-tQXFx4l35qCsy7vR9Nzzbm217T07wgS3fezFvSUVcspxKkFBnAItMXA4JyjoDjm7PNTcP2WEXTtyGPetgcoEaZDzecjQ3wglMY90z~xDK0dzzBsx1ZnZDJFXhUQxmbOAFZX3BjJxrxg1vblj81J~Numre4nkfFEq-L8jV~i4e7UNwF3eUB8uwSatr640nvyZYQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
                         "aspectRatio": "2:1"
                       }
                     },
@@ -544,7 +538,7 @@
                         "title": "Take.Simple",
                         "text": "Simplicidade é o último grau de sofisticação",
                         "type": "image/jpeg",
-                        "uri": "https://s3-sa-east-1.amazonaws.com/msging.net/Services/Images/2e3ff2b4-a8c6-4188-bc0c-0f23531739b2",
+                        "uri": "https://s3-alpha-sig.figma.com/img/4ea0/e2d8/74967d804f0567bc36ca7cea681c84cc?Expires=1629676800&Signature=PAxGvubMtCYecV60QAVxHysheliAmEoCHqfAxWi2oGkzQSdC7CLu5nH3j4Z30CVyUwGkvWWkwVPB66M-lfPqGinoEAxcGPPiuIdUtjVQwq3Of9SpgiP7v9UW~vdrIsEdszCpkFdWWR3Q9C-bibvg25pIGajRpZGgytReZZM~6~VoqzMaDfyJN2o-DbP40t2vc5jOdBwDmNrL08C6Fc0B-0Sv0ix~QTPxgC5XnsHpyuuUSmPobN8gbVBApo67A0ZbDwDSkeBu59uges4GR0XICbwaPundm9tb34MIYCineZ0913CI~0cHNjSuAUVm88hdNUkDJZLR56q9~Cbmx6sY7g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
                         "aspectRatio": "2:1"
                       }
                     },
@@ -567,7 +561,7 @@
                         "title": "Take.Higher",
                         "text": "Pensar grande e ir além",
                         "type": "image/jpeg",
-                        "uri": "https://s3-sa-east-1.amazonaws.com/msging.net/Services/Images/2e3ff2b4-a8c6-4188-bc0c-0f23531739b2",
+                        "uri": "https://s3-alpha-sig.figma.com/img/8d83/3531/bf7c758ea21576cac3a88739a0a3d740?Expires=1629676800&Signature=KdjuXvz7RJL8iX7CX3DcOr4~6BUqto~vO7cp9g6F3LJ8QOxKn6hHadGhRcuE2pZyb9NmnapreYKeXD9Y-xtdvIosAJAcjHRHkjcPGydS8SPJetzbNxPnGytosKvPII5HpnOsOU-InEiZqWs1GZL6mlcpWahga5x5BQY91v9SU6ozeutDudfS7pwrwzRUkU6fy7Pr2ElK6DpTXC7yDFmTYlAL4tQO61PgQJttInrbZmMbORb-VPZ5gXtAK3THBH2kiA7hWnYnpKokbxdRkJLdJEEI4W2-CWeN983-M-xKoQGxfC6ItsdkoZjRJi8OiIQbvFrHtnzB2IpX7CGedB8y-g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
                         "aspectRatio": "2:1"
                       }
                     },
@@ -590,7 +584,7 @@
                         "title": "Desafio",
                         "text": "----",
                         "type": "image/jpeg",
-                        "uri": "https://s3-sa-east-1.amazonaws.com/msging.net/Services/Images/2e3ff2b4-a8c6-4188-bc0c-0f23531739b2",
+                        "uri": "https://s3-alpha-sig.figma.com/img/7ed0/c940/9d58314f786e078de482d5a8ed40f205?Expires=1629676800&Signature=VNPH5TWMOFgcgH3bEJxkP-IjSR~NNBy6e9Z8E-cos0zVk9tMxt5~S2FZlqnuCDkSBHR2VGoLpSZpczrFdixdM3MeVSRHLUhs-6SXUH7ETEMHc38HLhBZT~ZZsQ3KZDBkS0FBa46HMHmqS38c9HSrla0IUgWB0sNqygQFvZWa~S8r8m1A3skwnHFVJQ-AYnX51Jna679ZBKzzo2DpPBfKXSGDCJd4laF~5mh0OHfzsj7RIP8jFA1WRUty9x~m64wtlliQKzNcVp2vUBIwwzwnVFe299fwfGdrgL7vqmbDE8VqXMyLQPvzygh99Yi1MOtriEGejJ9ASorTRV0jzy9QdA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
                         "aspectRatio": "2:1"
                       }
                     },
@@ -614,7 +608,27 @@
             "position": "left"
           }
         },
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:16978"
+      },
+      {
+        "input": {
+          "bypass": false,
+          "$cardContent": {
+            "document": {
+              "id": "40fe6299-5690-48b6-9265-de88c84671da",
+              "type": "text/plain",
+              "content": "User input"
+            },
+            "editable": false,
+            "deletable": true,
+            "position": "right",
+            "editing": false
+          },
+          "$invalid": false
+        },
+        "$invalid": false,
+        "$$hashKey": "object:16974"
       }
     ],
     "$conditionOutputs": [
@@ -626,10 +640,12 @@
           {
             "source": "input",
             "comparison": "matches",
-            "values": ["💙 Saber mais"]
+            "values": ["💙 Saber mais"],
+            "$$hashKey": "object:17061"
           }
         ],
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:17035"
       },
       {
         "stateId": "0187c43c-aec4-4fc6-9770-00e3655a0b55",
@@ -639,10 +655,12 @@
           {
             "source": "input",
             "comparison": "matches",
-            "values": ["🏳️ Saber mais"]
+            "values": ["🏳️ Saber mais"],
+            "$$hashKey": "object:17091"
           }
         ],
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:17036"
       },
       {
         "stateId": "20d9c1c9-1a89-4e05-8a87-1b5d8a5b5aee",
@@ -652,10 +670,12 @@
           {
             "source": "input",
             "comparison": "matches",
-            "values": ["⭐ Saber mais"]
+            "values": ["⭐ Saber mais"],
+            "$$hashKey": "object:17121"
           }
         ],
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:17037"
       },
       {
         "stateId": "5f5ee1f9-5ea3-4c6b-9870-576b2f00217c",
@@ -665,10 +685,12 @@
           {
             "source": "input",
             "comparison": "matches",
-            "values": ["⚡ Saber mais"]
+            "values": ["⚡ Saber mais"],
+            "$$hashKey": "object:17151"
           }
         ],
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:17038"
       },
       {
         "stateId": "0786c0be-9469-4c78-9377-95efc6e3a70d",
@@ -678,10 +700,12 @@
           {
             "source": "input",
             "comparison": "matches",
-            "values": ["🎯 Saber mais"]
+            "values": ["🎯 Saber mais"],
+            "$$hashKey": "object:17181"
           }
         ],
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:17039"
       },
       {
         "stateId": "d4a0726c-4993-4b9c-ab73-74d87529149a",
@@ -691,10 +715,12 @@
           {
             "source": "input",
             "comparison": "matches",
-            "values": ["🚀 Saber mais"]
+            "values": ["🚀 Saber mais"],
+            "$$hashKey": "object:17211"
           }
         ],
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:17040"
       },
       {
         "stateId": "ff7dfd84-a289-4ee5-9e35-f6e0a7756dc9",
@@ -704,10 +730,12 @@
           {
             "source": "input",
             "comparison": "matches",
-            "values": ["Fazer desafio"]
+            "values": ["Fazer desafio"],
+            "$$hashKey": "object:17241"
           }
         ],
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:17041"
       }
     ],
     "$enteringCustomActions": [],
@@ -735,30 +763,6 @@
     "$contentActions": [
       {
         "action": {
-          "$id": "e05320d5-e5b4-4a2b-9025-f89f391461d8",
-          "$typeOfContent": "",
-          "type": "SendMessage",
-          "settings": {
-            "id": "00000000-0000-0000-0000-000000000002",
-            "type": "application/vnd.lime.chatstate+json",
-            "content": { "state": "composing", "interval": 1000 }
-          },
-          "$cardContent": {
-            "document": {
-              "id": "00000000-0000-0000-0000-000000000002",
-              "type": "application/vnd.lime.chatstate+json",
-              "content": { "state": "composing", "interval": 1000 }
-            },
-            "editable": true,
-            "deletable": true,
-            "position": "left",
-            "editing": false
-          }
-        },
-        "$invalid": false
-      },
-      {
-        "action": {
           "$id": "dff6406a-05e9-4c8a-88a8-950f044e4111",
           "$typeOfContent": "",
           "type": "SendMessage",
@@ -779,7 +783,8 @@
             "editing": false
           }
         },
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:12599"
       },
       {
         "input": {
@@ -797,7 +802,8 @@
           },
           "$invalid": false
         },
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:12600"
       }
     ],
     "$conditionOutputs": [
@@ -806,9 +812,15 @@
         "$connId": "con_48",
         "$id": "7bf7a5ef-0a9f-4545-8482-b7f24d231b8c",
         "conditions": [
-          { "source": "input", "comparison": "exists", "values": [] }
+          {
+            "source": "input",
+            "comparison": "exists",
+            "values": [],
+            "$$hashKey": "object:12809"
+          }
         ],
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:12790"
       }
     ],
     "$enteringCustomActions": [],
@@ -848,7 +860,8 @@
             "position": "left"
           }
         },
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:18078"
       },
       {
         "action": {
@@ -872,7 +885,8 @@
             "position": "left"
           }
         },
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:18079"
       },
       {
         "input": {
@@ -891,7 +905,8 @@
           },
           "$invalid": false
         },
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:18080"
       }
     ],
     "$conditionOutputs": [
@@ -900,9 +915,15 @@
         "$connId": "con_53",
         "$id": "348be4cc-a20c-4ff7-8da6-ed6a814544ca",
         "conditions": [
-          { "source": "input", "comparison": "exists", "values": [] }
+          {
+            "source": "input",
+            "comparison": "exists",
+            "values": [],
+            "$$hashKey": "object:18289"
+          }
         ],
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:18270"
       }
     ],
     "$enteringCustomActions": [],
@@ -1299,7 +1320,7 @@
           }
         },
         "$invalid": false,
-        "$$hashKey": "object:8166"
+        "$$hashKey": "object:19202"
       },
       {
         "action": {
@@ -1319,7 +1340,7 @@
                       "title": "{{repo1@title}}",
                       "text": "{{repo1@description}}",
                       "type": "image/jpeg",
-                      "uri": "{{avatar}}",
+                      "uri": "{{avatar@avatar}}",
                       "aspectRatio": "2:1"
                     }
                   },
@@ -1334,7 +1355,7 @@
                       "title": "{{repo2@title}}",
                       "text": "{{repo2@description}}",
                       "type": "image/jpeg",
-                      "uri": "{{avatar}}",
+                      "uri": "{{avatar@avatar}}",
                       "aspectRatio": "2:1"
                     }
                   },
@@ -1349,7 +1370,7 @@
                       "title": "{{repo3@title}}",
                       "text": "{{repo3@description}}",
                       "type": "image/jpeg",
-                      "uri": "{{avatar}}",
+                      "uri": "{{avatar@avatar}}",
                       "aspectRatio": "2:1"
                     }
                   },
@@ -1364,7 +1385,7 @@
                       "title": "{{repo4@title}}",
                       "text": "{{repo4@description}}",
                       "type": "image/jpeg",
-                      "uri": "{{avatar}}",
+                      "uri": "{{avatar@avatar}}",
                       "aspectRatio": "2:1"
                     }
                   },
@@ -1379,7 +1400,7 @@
                       "title": "{{repo5@title}}",
                       "text": "{{repo5@description}}",
                       "type": "image/jpeg",
-                      "uri": "{{avatar}}",
+                      "uri": "{{avatar@avatar}}",
                       "aspectRatio": "2:1"
                     }
                   },
@@ -1405,7 +1426,7 @@
                         "title": "{{repo1@title}}",
                         "text": "{{repo1@description}}",
                         "type": "image/jpeg",
-                        "uri": "{{avatar}}",
+                        "uri": "{{avatar@avatar}}",
                         "aspectRatio": "2:1"
                       }
                     },
@@ -1420,7 +1441,7 @@
                         "title": "{{repo2@title}}",
                         "text": "{{repo2@description}}",
                         "type": "image/jpeg",
-                        "uri": "{{avatar}}",
+                        "uri": "{{avatar@avatar}}",
                         "aspectRatio": "2:1"
                       }
                     },
@@ -1435,7 +1456,7 @@
                         "title": "{{repo3@title}}",
                         "text": "{{repo3@description}}",
                         "type": "image/jpeg",
-                        "uri": "{{avatar}}",
+                        "uri": "{{avatar@avatar}}",
                         "aspectRatio": "2:1"
                       }
                     },
@@ -1450,7 +1471,7 @@
                         "title": "{{repo4@title}}",
                         "text": "{{repo4@description}}",
                         "type": "image/jpeg",
-                        "uri": "{{avatar}}",
+                        "uri": "{{avatar@avatar}}",
                         "aspectRatio": "2:1"
                       }
                     },
@@ -1465,7 +1486,7 @@
                         "title": "{{repo5@title}}",
                         "text": "{{repo5@description}}",
                         "type": "image/jpeg",
-                        "uri": "{{avatar}}",
+                        "uri": "{{avatar@avatar}}",
                         "aspectRatio": "2:1"
                       }
                     },
@@ -1483,7 +1504,7 @@
           }
         },
         "$invalid": false,
-        "$$hashKey": "object:8167"
+        "$$hashKey": "object:19203"
       },
       {
         "input": {
@@ -1503,7 +1524,7 @@
           "$invalid": false
         },
         "$invalid": false,
-        "$$hashKey": "object:8168"
+        "$$hashKey": "object:19204"
       }
     ],
     "$conditionOutputs": [
@@ -1516,11 +1537,11 @@
             "source": "input",
             "comparison": "exists",
             "values": [],
-            "$$hashKey": "object:8377"
+            "$$hashKey": "object:19413"
           }
         ],
         "$invalid": false,
-        "$$hashKey": "object:8358"
+        "$$hashKey": "object:19394"
       }
     ],
     "$enteringCustomActions": [
@@ -1626,25 +1647,6 @@
   "12217574-41c2-45fc-beb9-7e81123f2768": {
     "$contentActions": [
       {
-        "input": {
-          "bypass": true,
-          "$cardContent": {
-            "document": {
-              "id": "cfc58f11-ca2d-4a2d-a548-f7cbaff1ecf2",
-              "type": "text/plain",
-              "textContent": "User input",
-              "content": "User input"
-            },
-            "editable": false,
-            "deletable": true,
-            "position": "right",
-            "editing": false
-          },
-          "$invalid": false
-        },
-        "$invalid": false
-      },
-      {
         "action": {
           "$id": "adcea083-a660-4abd-83d2-d7be877b6cd0",
           "$typeOfContent": "chat-state",
@@ -1672,7 +1674,8 @@
             "position": "left"
           }
         },
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:18505"
       },
       {
         "action": {
@@ -1810,7 +1813,28 @@
             "position": "left"
           }
         },
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:18506"
+      },
+      {
+        "input": {
+          "bypass": false,
+          "$cardContent": {
+            "document": {
+              "id": "cfc58f11-ca2d-4a2d-a548-f7cbaff1ecf2",
+              "type": "text/plain",
+              "textContent": "User input",
+              "content": "User input"
+            },
+            "editable": false,
+            "deletable": true,
+            "position": "right",
+            "editing": false
+          },
+          "$invalid": false
+        },
+        "$invalid": false,
+        "$$hashKey": "object:18504"
       }
     ],
     "$conditionOutputs": [
@@ -1819,18 +1843,30 @@
         "$connId": "con_88",
         "$id": "5904d4af-9157-4187-af55-9d587b1352f0",
         "conditions": [
-          { "source": "input", "comparison": "matches", "values": ["💙 Be"] }
+          {
+            "source": "input",
+            "comparison": "matches",
+            "values": ["💙 Be"],
+            "$$hashKey": "object:18733"
+          }
         ],
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:18696"
       },
       {
         "stateId": "0187c43c-aec4-4fc6-9770-00e3655a0b55",
         "$connId": "con_93",
         "$id": "8bd8058f-ca7a-4a71-bff3-84cdb39e4ee7",
         "conditions": [
-          { "source": "input", "comparison": "matches", "values": ["🏳️ Team"] }
+          {
+            "source": "input",
+            "comparison": "matches",
+            "values": ["🏳️ Team"],
+            "$$hashKey": "object:18756"
+          }
         ],
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:18697"
       },
       {
         "stateId": "20d9c1c9-1a89-4e05-8a87-1b5d8a5b5aee",
@@ -1840,10 +1876,12 @@
           {
             "source": "input",
             "comparison": "matches",
-            "values": ["⭐ Excellence"]
+            "values": ["⭐ Excellence"],
+            "$$hashKey": "object:18779"
           }
         ],
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:18698"
       },
       {
         "stateId": "5f5ee1f9-5ea3-4c6b-9870-576b2f00217c",
@@ -1853,10 +1891,12 @@
           {
             "source": "input",
             "comparison": "matches",
-            "values": ["⚡ Charge"]
+            "values": ["⚡ Charge"],
+            "$$hashKey": "object:18802"
           }
         ],
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:18699"
       },
       {
         "stateId": "0786c0be-9469-4c78-9377-95efc6e3a70d",
@@ -1866,10 +1906,12 @@
           {
             "source": "input",
             "comparison": "matches",
-            "values": ["🎯 Simple"]
+            "values": ["🎯 Simple"],
+            "$$hashKey": "object:18825"
           }
         ],
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:18700"
       },
       {
         "stateId": "d4a0726c-4993-4b9c-ab73-74d87529149a",
@@ -1879,10 +1921,12 @@
           {
             "source": "input",
             "comparison": "matches",
-            "values": ["🚀 Higher"]
+            "values": ["🚀 Higher"],
+            "$$hashKey": "object:18848"
           }
         ],
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:18701"
       },
       {
         "stateId": "ff7dfd84-a289-4ee5-9e35-f6e0a7756dc9",
@@ -1892,10 +1936,12 @@
           {
             "source": "input",
             "comparison": "matches",
-            "values": ["💡 Desafio"]
+            "values": ["💡 Desafio"],
+            "$$hashKey": "object:18871"
           }
         ],
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:18702"
       }
     ],
     "$enteringCustomActions": [],
