@@ -63,18 +63,25 @@
           },
           "$invalid": false
         },
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:10492"
       }
     ],
     "$conditionOutputs": [
       {
         "stateId": "error",
         "conditions": [
-          { "source": "input", "comparison": "matches", "values": [".*"] }
+          {
+            "source": "input",
+            "comparison": "matches",
+            "values": [".*"],
+            "$$hashKey": "object:10537"
+          }
         ],
         "$id": "d321e81c-50da-4f41-b844-f09d5adfd8e4",
         "$connId": "con_8",
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:10518"
       }
     ],
     "$enteringCustomActions": [],
@@ -168,7 +175,13 @@
             "id": "688ca957-16c1-4cc6-b0f9-62104b2d9915",
             "type": "application/vnd.lime.chatstate+json",
             "content": { "state": "composing", "interval": "4000" },
-            "metadata": {}
+            "metadata": {
+              "#stateName": "{{state.name}}",
+              "#stateId": "{{state.id}}",
+              "#messageId": "{{input.message@id}}",
+              "#previousStateId": "{{state.previous.id}}",
+              "#previousStateName": "{{state.previous.name}}"
+            }
           },
           "$cardContent": {
             "document": {
@@ -192,7 +205,13 @@
             "id": "9aa68993-f186-4569-b9ff-61ca6f63b040",
             "type": "text/plain",
             "content": "Vamos lá...",
-            "metadata": {}
+            "metadata": {
+              "#stateName": "{{state.name}}",
+              "#stateId": "{{state.id}}",
+              "#messageId": "{{input.message@id}}",
+              "#previousStateId": "{{state.previous.id}}",
+              "#previousStateName": "{{state.previous.name}}"
+            }
           },
           "$cardContent": {
             "document": {
@@ -216,7 +235,13 @@
             "id": "1aff9c3e-0252-49eb-aecf-1ec470bd7894",
             "type": "text/plain",
             "content": "A cultura Take tem como base 6 valores que são:",
-            "metadata": {}
+            "metadata": {
+              "#stateName": "{{state.name}}",
+              "#stateId": "{{state.id}}",
+              "#messageId": "{{input.message@id}}",
+              "#previousStateId": "{{state.previous.id}}",
+              "#previousStateName": "{{state.previous.name}}"
+            }
           },
           "$cardContent": {
             "document": {
@@ -405,7 +430,13 @@
                 }
               ]
             },
-            "metadata": {}
+            "metadata": {
+              "#stateName": "{{state.name}}",
+              "#stateId": "{{state.id}}",
+              "#messageId": "{{input.message@id}}",
+              "#previousStateId": "{{state.previous.id}}",
+              "#previousStateName": "{{state.previous.name}}"
+            }
           },
           "$cardContent": {
             "document": {
@@ -776,7 +807,8 @@
         "$id": "7bf7a5ef-0a9f-4545-8482-b7f24d231b8c",
         "conditions": [
           { "source": "input", "comparison": "exists", "values": [] }
-        ]
+        ],
+        "$invalid": false
       }
     ],
     "$enteringCustomActions": [],
@@ -869,7 +901,8 @@
         "$id": "348be4cc-a20c-4ff7-8da6-ed6a814544ca",
         "conditions": [
           { "source": "input", "comparison": "exists", "values": [] }
-        ]
+        ],
+        "$invalid": false
       }
     ],
     "$enteringCustomActions": [],
@@ -939,7 +972,8 @@
         "$id": "dbacc8ad-c5c2-4bc3-8a7a-1fbc6093a852",
         "conditions": [
           { "source": "input", "comparison": "exists", "values": [] }
-        ]
+        ],
+        "$invalid": false
       }
     ],
     "$enteringCustomActions": [],
@@ -1009,7 +1043,8 @@
         "$id": "02d1a888-9bb4-4b47-a7f0-cd5a3b576db4",
         "conditions": [
           { "source": "input", "comparison": "exists", "values": [] }
-        ]
+        ],
+        "$invalid": false
       }
     ],
     "$enteringCustomActions": [],
@@ -1221,7 +1256,8 @@
         "$id": "a357f5ad-34cc-437f-b5f1-37ed5ff877fc",
         "conditions": [
           { "source": "input", "comparison": "exists", "values": [] }
-        ]
+        ],
+        "$invalid": false
       }
     ],
     "$enteringCustomActions": [],
@@ -1262,7 +1298,8 @@
             "position": "left"
           }
         },
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:8166"
       },
       {
         "action": {
@@ -1279,10 +1316,10 @@
                   "header": {
                     "type": "application/vnd.lime.media-link+json",
                     "value": {
-                      "title": "Repositório 1",
-                      "text": "Descrição do repositório",
+                      "title": "{{repo1@title}}",
+                      "text": "{{repo1@description}}",
                       "type": "image/jpeg",
-                      "uri": "https://s3-sa-east-1.amazonaws.com/msging.net/Services/Images/2e3ff2b4-a8c6-4188-bc0c-0f23531739b2",
+                      "uri": "{{avatar}}",
                       "aspectRatio": "2:1"
                     }
                   },
@@ -1294,29 +1331,14 @@
                   "header": {
                     "type": "application/vnd.lime.media-link+json",
                     "value": {
-                      "title": "Repositório 02",
-                      "text": "Descrição do repositório",
+                      "title": "{{repo2@title}}",
+                      "text": "{{repo2@description}}",
                       "type": "image/jpeg",
-                      "uri": "https://s3-sa-east-1.amazonaws.com/msging.net/Services/Images/2e3ff2b4-a8c6-4188-bc0c-0f23531739b2",
+                      "uri": "{{avatar}}",
                       "aspectRatio": "2:1"
                     }
                   },
-                  "options": [
-                    {
-                      "label": {
-                        "type": "text/plain",
-                        "value": "First option"
-                      },
-                      "value": null
-                    },
-                    {
-                      "label": {
-                        "type": "text/plain",
-                        "value": "Second option"
-                      },
-                      "value": null
-                    }
-                  ],
+                  "options": [],
                   "id": 1,
                   "editing": false
                 },
@@ -1324,10 +1346,10 @@
                   "header": {
                     "type": "application/vnd.lime.media-link+json",
                     "value": {
-                      "title": "Repositório 03",
-                      "text": "Descrição do repositório",
+                      "title": "{{repo3@title}}",
+                      "text": "{{repo3@description}}",
                       "type": "image/jpeg",
-                      "uri": "",
+                      "uri": "{{avatar}}",
                       "aspectRatio": "2:1"
                     }
                   },
@@ -1339,10 +1361,10 @@
                   "header": {
                     "type": "application/vnd.lime.media-link+json",
                     "value": {
-                      "title": "Repositório 04",
-                      "text": "Descrição do repositório",
+                      "title": "{{repo4@title}}",
+                      "text": "{{repo4@description}}",
                       "type": "image/jpeg",
-                      "uri": "",
+                      "uri": "{{avatar}}",
                       "aspectRatio": "2:1"
                     }
                   },
@@ -1354,15 +1376,16 @@
                   "header": {
                     "type": "application/vnd.lime.media-link+json",
                     "value": {
-                      "title": "Repositório 05",
-                      "text": "Descrição do repositório",
+                      "title": "{{repo5@title}}",
+                      "text": "{{repo5@description}}",
                       "type": "image/jpeg",
-                      "uri": "",
+                      "uri": "{{avatar}}",
                       "aspectRatio": "2:1"
                     }
                   },
                   "options": [],
-                  "editing": false
+                  "editing": false,
+                  "id": 4
                 }
               ]
             },
@@ -1379,10 +1402,10 @@
                     "header": {
                       "type": "application/vnd.lime.media-link+json",
                       "value": {
-                        "title": "Repositório 1",
-                        "text": "Descrição do repositório",
+                        "title": "{{repo1@title}}",
+                        "text": "{{repo1@description}}",
                         "type": "image/jpeg",
-                        "uri": "https://s3-sa-east-1.amazonaws.com/msging.net/Services/Images/2e3ff2b4-a8c6-4188-bc0c-0f23531739b2",
+                        "uri": "{{avatar}}",
                         "aspectRatio": "2:1"
                       }
                     },
@@ -1394,29 +1417,14 @@
                     "header": {
                       "type": "application/vnd.lime.media-link+json",
                       "value": {
-                        "title": "Repositório 02",
-                        "text": "Descrição do repositório",
+                        "title": "{{repo2@title}}",
+                        "text": "{{repo2@description}}",
                         "type": "image/jpeg",
-                        "uri": "https://s3-sa-east-1.amazonaws.com/msging.net/Services/Images/2e3ff2b4-a8c6-4188-bc0c-0f23531739b2",
+                        "uri": "{{avatar}}",
                         "aspectRatio": "2:1"
                       }
                     },
-                    "options": [
-                      {
-                        "label": {
-                          "type": "text/plain",
-                          "value": "First option"
-                        },
-                        "value": null
-                      },
-                      {
-                        "label": {
-                          "type": "text/plain",
-                          "value": "Second option"
-                        },
-                        "value": null
-                      }
-                    ],
+                    "options": [],
                     "id": 1,
                     "editing": false
                   },
@@ -1424,10 +1432,10 @@
                     "header": {
                       "type": "application/vnd.lime.media-link+json",
                       "value": {
-                        "title": "Repositório 03",
-                        "text": "Descrição do repositório",
+                        "title": "{{repo3@title}}",
+                        "text": "{{repo3@description}}",
                         "type": "image/jpeg",
-                        "uri": "",
+                        "uri": "{{avatar}}",
                         "aspectRatio": "2:1"
                       }
                     },
@@ -1439,10 +1447,10 @@
                     "header": {
                       "type": "application/vnd.lime.media-link+json",
                       "value": {
-                        "title": "Repositório 04",
-                        "text": "Descrição do repositório",
+                        "title": "{{repo4@title}}",
+                        "text": "{{repo4@description}}",
                         "type": "image/jpeg",
-                        "uri": "",
+                        "uri": "{{avatar}}",
                         "aspectRatio": "2:1"
                       }
                     },
@@ -1454,25 +1462,28 @@
                     "header": {
                       "type": "application/vnd.lime.media-link+json",
                       "value": {
-                        "title": "Repositório 05",
-                        "text": "Descrição do repositório",
+                        "title": "{{repo5@title}}",
+                        "text": "{{repo5@description}}",
                         "type": "image/jpeg",
-                        "uri": "",
+                        "uri": "{{avatar}}",
                         "aspectRatio": "2:1"
                       }
                     },
                     "options": [],
-                    "editing": false
+                    "editing": false,
+                    "id": 4
                   }
                 ]
-              }
+              },
+              "metadata": {}
             },
             "editable": true,
             "deletable": true,
             "position": "left"
           }
         },
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:8167"
       },
       {
         "input": {
@@ -1491,7 +1502,8 @@
           },
           "$invalid": false
         },
-        "$invalid": false
+        "$invalid": false,
+        "$$hashKey": "object:8168"
       }
     ],
     "$conditionOutputs": [
@@ -1500,11 +1512,104 @@
         "$connId": "con_83",
         "$id": "ac4dd58d-d911-475c-a346-81d3bd6db4af",
         "conditions": [
-          { "source": "input", "comparison": "exists", "values": [] }
-        ]
+          {
+            "source": "input",
+            "comparison": "exists",
+            "values": [],
+            "$$hashKey": "object:8377"
+          }
+        ],
+        "$invalid": false,
+        "$$hashKey": "object:8358"
       }
     ],
-    "$enteringCustomActions": [],
+    "$enteringCustomActions": [
+      {
+        "$id": "ada871b5-a958-48f1-a92f-c1a9acad9f32",
+        "$typeOfContent": "",
+        "type": "ProcessHttp",
+        "$title": "Process HTTP",
+        "$invalid": false,
+        "settings": {
+          "headers": {},
+          "method": "GET",
+          "uri": "http://54.233.181.173/api/Blip/avatar",
+          "responseBodyVariable": "avatar"
+        },
+        "conditions": []
+      },
+      {
+        "$id": "6ce1eb67-72e2-4c04-a308-30d570ce3f52",
+        "$typeOfContent": "",
+        "type": "ProcessHttp",
+        "$title": "Process HTTP",
+        "$invalid": false,
+        "settings": {
+          "headers": {},
+          "method": "GET",
+          "uri": "http://54.233.181.173/api/Blip/repo/1",
+          "responseBodyVariable": "repo1",
+          "responseStatusVariable": ""
+        },
+        "conditions": []
+      },
+      {
+        "$id": "5d824a60-f7df-4d2a-9390-61809261b174",
+        "$typeOfContent": "",
+        "type": "ProcessHttp",
+        "$title": "Process HTTP",
+        "$invalid": false,
+        "settings": {
+          "headers": {},
+          "method": "GET",
+          "uri": "http://54.233.181.173/api/Blip/repo/2",
+          "responseBodyVariable": "repo2"
+        },
+        "conditions": []
+      },
+      {
+        "$id": "9d657288-3876-416c-b3d7-82e588e38dce",
+        "$typeOfContent": "",
+        "type": "ProcessHttp",
+        "$title": "Process HTTP",
+        "$invalid": false,
+        "settings": {
+          "headers": {},
+          "method": "GET",
+          "uri": "http://54.233.181.173/api/Blip/repo/3",
+          "responseBodyVariable": "repo3"
+        },
+        "conditions": []
+      },
+      {
+        "$id": "10aaaaf7-1304-450f-a9b8-7bc6f97d0b35",
+        "$typeOfContent": "",
+        "type": "ProcessHttp",
+        "$title": "Process HTTP",
+        "$invalid": false,
+        "settings": {
+          "headers": {},
+          "method": "GET",
+          "uri": "http://54.233.181.173/api/Blip/repo/4",
+          "responseBodyVariable": "repo4"
+        },
+        "conditions": []
+      },
+      {
+        "$id": "9b235c31-0d3d-4817-af07-2eea58d1f033",
+        "$typeOfContent": "",
+        "type": "ProcessHttp",
+        "$title": "Process HTTP",
+        "$invalid": false,
+        "settings": {
+          "headers": {},
+          "method": "GET",
+          "uri": "http://54.233.181.173/api/Blip/repo/5",
+          "responseBodyVariable": "repo5"
+        },
+        "conditions": []
+      }
+    ],
     "$leavingCustomActions": [],
     "$inputSuggestions": ["First option", "Second option"],
     "$defaultOutput": { "stateId": "fallback", "$invalid": false },
@@ -1512,7 +1617,7 @@
     "id": "ff7dfd84-a289-4ee5-9e35-f6e0a7756dc9",
     "root": false,
     "$title": "Desafio",
-    "$position": { "top": "846px", "left": "891px" },
+    "$position": { "top": "845px", "left": "891px" },
     "$invalidContentActions": false,
     "$invalidOutputs": false,
     "$invalidCustomActions": false,
@@ -1548,7 +1653,13 @@
             "id": "c3f141da-a59a-4b82-9053-7cbf91b735a4",
             "type": "application/vnd.lime.chatstate+json",
             "content": { "state": "composing", "interval": "4000" },
-            "metadata": {}
+            "metadata": {
+              "#stateName": "{{state.name}}",
+              "#stateId": "{{state.id}}",
+              "#messageId": "{{input.message@id}}",
+              "#previousStateId": "{{state.previous.id}}",
+              "#previousStateName": "{{state.previous.name}}"
+            }
           },
           "$cardContent": {
             "document": {
@@ -1626,7 +1737,13 @@
                 }
               ]
             },
-            "metadata": {}
+            "metadata": {
+              "#stateName": "{{state.name}}",
+              "#stateId": "{{state.id}}",
+              "#messageId": "{{input.message@id}}",
+              "#previousStateId": "{{state.previous.id}}",
+              "#previousStateName": "{{state.previous.name}}"
+            }
           },
           "$cardContent": {
             "document": {
