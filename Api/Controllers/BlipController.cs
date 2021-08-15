@@ -32,26 +32,12 @@ namespace Api.Controllers
             }
         }
 
-        [HttpGet("repo/{pos}/title")]
-        public async Task<IActionResult> GetRepositoryTitle(int pos)
+        [HttpGet("repo/{pos}")]
+        public async Task<IActionResult> GetRepository(int pos)
         {
             try
             {
-                return Ok(new { Title = await _repository.GetTitle(pos) });
-            }
-            catch (Exception err)
-            {
-                Console.Out.WriteLine(err);
-                return BadRequest();
-            }
-        }
-
-        [HttpGet("repo/{pos}/description")]
-        public async Task<IActionResult> GetRepositoryDescription(int pos)
-        {
-            try
-            {
-                return Ok(new { Description = await _repository.GetDescription(pos) });
+                return Ok(new { Title = await _repository.GetTitle(pos), Description = await _repository.GetDescription(pos) });
             }
             catch (Exception err)
             {
